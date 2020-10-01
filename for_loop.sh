@@ -1,4 +1,10 @@
+#!/bin/bash
+
 for i in `ls | grep  ".sh"`
 do
-	  echo "file: $i"
-  done
+    if [  $i != "for_loop.sh" ]
+      then
+       echo "file: $i"
+       bash -c ./$i
+    fi
+done
