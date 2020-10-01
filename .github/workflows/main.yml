@@ -34,5 +34,5 @@ jobs:
         run: |
           echo "running script"
           echo whoami
-          chmod +x for_loop.sh
-          sh for_loop.sh
+          chmod +x ./for_loop.sh
+          ./for_loop.sh
